@@ -1,0 +1,29 @@
+.header {
+    height: 60px;
+    background-color: white;
+    border-bottom: 1px solid #1da57a;
+    line-height: 60px;
+    padding: 0px 40px 0px 40px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    font-size: 18px;
+    .header-left {
+        text-align: left;
+        font-size: 20px;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 100%;
+            border-top: 20px solid white;
+            border-right: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+            border-left: 20px solid transparent;
+        }
+    }
+
+ 
+}
